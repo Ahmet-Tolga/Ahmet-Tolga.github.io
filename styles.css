@@ -118,3 +118,55 @@ nav div li a{
   #img{
     box-shadow: 1px 5px 6px .5px rgba(0, 0, 0, 0.5);
   }
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    transition: opacity 0.4s;
+  }
+  
+  .card:hover img {
+    opacity: 0.8;
+  }
+  
+  .card .intro {
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .card:hover .intro {
+    opacity: 1;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .card-header .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .card-header .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  .btn-primary:hover, .btn-warning:hover {
+    background-color: darken(#007bff, 10%);
+  }
+  
